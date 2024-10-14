@@ -1,67 +1,113 @@
 /* General Styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
 body {
-  font-family: 'Arial', sans-serif;
-  background-color: #f9f9f9;
-  color: #333;
+    font-family: 'Roboto', sans-serif;
+    background-color: white;
+    color: #333;
+    line-height: 1.6;
+    padding: 20px;
 }
 
-a {
-  text-decoration: none;
-  color: #007BFF;
+/* Header Section (Centered) */
+header {
+    text-align: center;
+    margin-bottom: 20px;
 }
 
-a:hover {
-  color: #0056b3;
+.name-title {
+    font-size: 2.5rem;
+    margin-bottom: 10px;
+    color: #333;
 }
 
-/* Header Styles */
-header h1 {
-  font-size: 2.5em;
-  color: #333;
+.small-bio {
+    font-size: 1.2rem;
+    color: #666;
 }
 
-header p {
-  font-size: 1.2em;
-  color: #666;
+/* Social Section (Centered) */
+.social-section {
+    text-align: center;
+    margin-bottom: 30px;
 }
 
-/* Container Styles */
-h2 {
-  font-size: 2em;
-  margin-bottom: 15px;
+.social-icons a {
+    margin: 0 10px;
 }
 
-p {
-  font-size: 1.1em;
-  line-height: 1.6;
+.social-icons img {
+    width: 40px;
+    height: 40px;
 }
 
-ul {
-  list-style-type: none;
-  padding: 0;
+/* About Section (Left-aligned) */
+.about-section {
+    margin: 40px 0;
+    text-align: left;
 }
 
-ul li {
-  margin: 10px 0;
+.about-section h2 {
+    margin-bottom: 10px;
+    color: #333;
 }
 
-ul li a {
-  color: #007BFF;
-  font-size: 1.1em;
+.about-section p {
+    font-size: 1.1rem;
+    color: #444;
+    max-width: 800px;
+    margin: 0 auto;
 }
 
-/* Footer Styles */
+/* Journal Section (Left-aligned) */
+.journal-section {
+    text-align: left;
+    margin: 40px 0;
+}
+
+.journal-section h2 {
+    margin-bottom: 10px;
+}
+
+.journal-section p {
+    font-size: 1.1rem;
+}
+
+.journal-section a {
+    color: blue;
+    text-decoration: underline;
+    font-weight: bold;
+}
+
+/* Footer (Centered) */
 footer {
-  background-color: #f8f8f8;
-  color: #666;
+    text-align: center;
+    margin-top: 40px;
+    font-size: 0.9rem;
+    color: #777;
 }
 
-/* Social Media Icon Sizes */
-.fa-twitter, .fa-instagram, .fa-linkedin {
-  font-size: 1.5em;
-  color: #007BFF;
-}
+/* Responsive Design */
+@media (max-width: 768px) {
+    .name-title {
+        font-size: 2rem;
+    }
 
-.fa-twitter:hover, .fa-instagram:hover, .fa-linkedin:hover {
-  color: #0056b3;
+    .small-bio {
+        font-size: 1rem;
+    }
+
+    .social-icons img {
+        width: 30px;
+        height: 30px;
+    }
+
+    .about-section p,
+    .journal-section p {
+        font-size: 1rem;
+    }
 }
