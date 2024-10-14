@@ -36,13 +36,20 @@ header {
     margin-bottom: 30px;
 }
 
-.social-icons a {
-    margin: 0 10px;
+/* Default link style */
+a {
+    color: #0D92F4; /* Default color for links */
+    text-decoration: underline; /* Underline links */
 }
 
-.social-icons img {
-    width: 40px;
-    height: 40px;
+/* Hover effect */
+a:hover {
+    color: #091057; /* Change color when hovering */
+}
+
+/* Visited link style */
+a:visited {
+    color: #640D5F; /* Color for visited links */
 }
 
 /* About Section (Left-aligned) */
