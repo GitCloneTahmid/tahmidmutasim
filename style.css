@@ -69,6 +69,10 @@ header {
     font-size: 1.1rem;
 }
 
+.journal-section a{
+    color: #66d9ff;
+}
+
 /* Link styles */
 a {
     color: #66d9ff; /* Lighter blue for default links */
