@@ -69,10 +69,26 @@ header {
     font-size: 1.1rem;
 }
 
-.journal-section a {
-    color: blue;
+/* Link styles */
+a {
+    color: #66d9ff; /* Lighter blue for default links */
     text-decoration: underline;
-    font-weight: bold;
+    transition: color 0.3s ease; /* Smooth transition on hover */
+}
+
+/* Hover effect */
+a:hover {
+    color: #99eaff; /* Even lighter blue when hovering */
+}
+
+/* Visited link style */
+a:visited {
+    color: #b3b3cc; /* Soft grayish-purple for visited links */
+}
+
+/* Active link style (when clicked) */
+a:active {
+    color: #ff9999; /* Soft pinkish-red for active links */
 }
 
 /* Footer (Centered) */
