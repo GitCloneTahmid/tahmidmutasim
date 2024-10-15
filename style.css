@@ -7,9 +7,9 @@
 
 body {
     font-family: 'Roboto', sans-serif;
-    background-color: #121212;
-    color: #ffffff;
-    line-height: 1.6;
+    background-color: white;
+    color: #333;
+    line-height: 1.6; 
     padding: 20px;
 }
 
@@ -22,12 +22,12 @@ header {
 .name-title {
     font-size: 2.5rem;
     margin-bottom: 10px;
-    color: #ffffff;
+    color: #333;
 }
 
 .small-bio {
     font-size: 1.2rem;
-    color: #ffffff;
+    color: #333;
 }
 
 /* Social Section (Centered) */
@@ -36,21 +36,6 @@ header {
     margin-bottom: 30px;
 }
 
-/* Make headings and links white */
-h1, h2, h3, p, a {
-    color: #ffffff; /* White text for all headings, paragraphs, and links */
-}
-
-/* Link styles */
-a {
-    color: #00aaff; /* Light blue links */
-    text-decoration: underline;
-}
-
-/* Hover effect for links */
-a:hover {
-    color: #66d9ff; /* Lighter blue when hovering */
-}
 
 /* About Section (Left-aligned) */
 .about-section {
