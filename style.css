@@ -87,7 +87,7 @@ a:hover {
 
 /* Visited link style */
 a:visited {
-    color: #b3b3cc; /* Soft grayish-purple for visited links */
+    color: #66d9ff;  /* Soft grayish-purple for visited links */
 }
 
 /* Active link style (when clicked) */
