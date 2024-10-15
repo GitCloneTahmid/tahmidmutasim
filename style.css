@@ -39,7 +39,7 @@ header {
 /* Default link style */
 a {
     color: #0D92F4; /* Default color for links */
-    text-decoration: underline; /* Underline links */
+    text-decoration: bold; /* Underline links */
 }
 
 /* Hover effect */
