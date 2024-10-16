@@ -46,6 +46,7 @@ header {
 .about-section h2 {
     margin-bottom: 10px;
     color: #333;
+    text-align: left;
 }
 
 .about-section p {
@@ -53,6 +54,7 @@ header {
     color: #444;
     max-width: 800px;
     margin: 0 auto;
+    text-align: left;
 }
 
 /* Journal Section (Left-aligned) */
@@ -67,32 +69,33 @@ header {
 
 .journal-section p {
     font-size: 1.1rem;
+    text-align: left;
 }
 
 .journal-section a{
-    color: #66d9ff;
+    color: #024CAA;
 }
 
 /* Link styles */
 a {
-    color: #66d9ff; /* Lighter blue for default links */
-    text-decoration: underline;
+    color: #024CAA; /* Lighter blue for default links */
+    text-decoration: none;
     transition: color 0.3s ease; /* Smooth transition on hover */
 }
 
 /* Hover effect */
 a:hover {
-    color: #99eaff; /* Even lighter blue when hovering */
+    color: #024CAA; /* Even lighter blue when hovering */
 }
 
 /* Visited link style */
 a:visited {
-    color: #66d9ff;  /* Soft grayish-purple for visited links */
+    color: #024CAA;  /* Soft grayish-purple for visited links */
 }
 
 /* Active link style (when clicked) */
 a:active {
-    color: #ff9999; /* Soft pinkish-red for active links */
+    color: #024CAA; /* Soft pinkish-red for active links */
 }
 
 /* Footer (Centered) */
@@ -100,7 +103,7 @@ footer {
     text-align: center;
     margin-top: 40px;
     font-size: 0.9rem;
-    color: #777;
+    color: #16423C;
 }
 
 /* Responsive Design */
@@ -113,10 +116,6 @@ footer {
         font-size: 1rem;
     }
 
-    .social-icons img {
-        width: 30px;
-        height: 30px;
-    }
 
     .about-section p,
     .journal-section p {
