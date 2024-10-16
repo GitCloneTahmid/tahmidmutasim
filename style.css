@@ -134,17 +134,20 @@ footer {
 
 /* Dark Mode Styles */
 body.dark-mode {
-    background-color: #121212;
-    color: #e0e0e0;
+    background-color: #121212; /* Dark background */
+    color: #e0e0e0; /* Light text */
 }
 
 body.dark-mode a {
-    color: #bb86fc; /* Softer accent for links in dark mode */
+    color: #bb86fc; /* Light purple for links */
 }
 
 body.dark-mode footer {
-    color: #b0b0b0;
+    color: #b0b0b0; /* Soft grey for footer text */
 }
+
+/* Other styles remain unchanged */
+
 
 
 /* Responsive Design */
