@@ -44,5 +44,19 @@
     <footer>
         <p><small>&copy; 2024-2028 Tahmid Mutasim.</small></p>
     </footer>
+
+
+    <script>
+    const toggle = document.getElementById('toggleDarkMode');
+    const body = document.body;
+
+    toggle.addEventListener('change', function() {
+        if (this.checked) {
+            body.classList.add('dark-mode');
+        } else {
+            body.classList.remove('dark-mode');
+        }
+    });
+</script>
 </body>
 </html>
