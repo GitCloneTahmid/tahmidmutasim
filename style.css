@@ -39,17 +39,15 @@ header {
 
 /* About Section (Left-aligned) */
 .about-section {
-    margin: 40px 0;
-    text-align: left;
+    margin: 40px 0; /* Keep vertical spacing */
+    text-align: left; /* Keep the text aligned to the left */
     max-width: 800px; /* Limit the max width for better readability */
-    margin-left: auto; /* Center align within the available space */
-    margin-right: auto; /* Center align within the available space */
+    padding: 0 20px; /* Add padding to prevent text from touching the edges */
 }
 
 .about-section h2 {
     margin-bottom: 10px;
     color: #333;
-    text-align: left;
 }
 
 .about-section p {
@@ -59,6 +57,7 @@ header {
     word-wrap: break-word; /* Ensure long words wrap to the next line */
     overflow-wrap: break-word; /* Prevent long words from causing overflow */
 }
+
 
 
 
