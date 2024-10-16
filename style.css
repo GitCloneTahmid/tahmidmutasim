@@ -107,6 +107,46 @@ footer {
     color: #16423C;
 }
 
+
+/* DARK MODE TOGGLE BUTTON */
+
+/* Dark Mode Toggle */
+.dark-mode-toggle {
+    position: absolute;
+    top: 20px;
+    right: 20px;
+}
+
+.dark-mode-toggle input {
+    display: none;
+}
+
+.dark-mode-toggle label {
+    cursor: pointer;
+    font-size: 1.5rem;
+    color: #333;
+    transition: color 0.3s ease;
+}
+
+.dark-mode-toggle label:hover {
+    color: #024CAA; /* Accent color on hover */
+}
+
+/* Dark Mode Styles */
+body.dark-mode {
+    background-color: #121212;
+    color: #e0e0e0;
+}
+
+body.dark-mode a {
+    color: #bb86fc; /* Softer accent for links in dark mode */
+}
+
+body.dark-mode footer {
+    color: #b0b0b0;
+}
+
+
 /* Responsive Design */
 @media (max-width: 768px) {
     .name-title {
