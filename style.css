@@ -74,6 +74,7 @@ header {
 
 .journal-section a{
     color: #024CAA;
+    text-decoration: underline;
 }
 
 /* Link styles */
@@ -85,17 +86,17 @@ a {
 
 /* Hover effect */
 a:hover {
-    color: #024CAA; /* Even lighter blue when hovering */
+    color: #024CAA; 
 }
 
 /* Visited link style */
 a:visited {
-    color: #024CAA;  /* Soft grayish-purple for visited links */
+    color: #024CAA; 
 }
 
 /* Active link style (when clicked) */
 a:active {
-    color: #024CAA; /* Soft pinkish-red for active links */
+    color: #024CAA;
 }
 
 /* Footer (Centered) */
