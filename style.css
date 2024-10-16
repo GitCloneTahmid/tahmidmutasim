@@ -138,13 +138,28 @@ body.dark-mode {
     color: #e0e0e0; /* Light text */
 }
 
+body.dark-mode h1, 
+body.dark-mode h2, 
+body.dark-mode h3 {
+    color: #ffffff; /* Bright white for headings */
+}
+
+body.dark-mode p {
+    color: #e0e0e0; /* Light grey for body text */
+}
+
 body.dark-mode a {
     color: #bb86fc; /* Light purple for links */
+}
+
+body.dark-mode a:hover {
+    color: #3700b3; /* Darker shade on hover for better visibility */
 }
 
 body.dark-mode footer {
     color: #b0b0b0; /* Soft grey for footer text */
 }
+
 
 /* Other styles remain unchanged */
 
