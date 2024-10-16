@@ -176,6 +176,38 @@ body.dark-mode footer {
     color: #b0b0b0; /* Soft grey for footer text */
 }
 
+
+/* WebKit Browsers (Chrome, Safari) */
+::-webkit-scrollbar {
+    width: 8px; /* Width of the scrollbar */
+    height: 8px; /* Height of the scrollbar (for horizontal scrollbar) */
+}
+
+::-webkit-scrollbar-track {
+    background: transparent; /* Background of the scrollbar track */
+}
+
+::-webkit-scrollbar-thumb {
+    background: #ccc; /* Color of the scrollbar thumb */
+    border-radius: 4px; /* Round edges for the thumb */
+}
+
+::-webkit-scrollbar-thumb:hover {
+    background: #aaa; /* Darker color on hover */
+}
+
+/* Firefox */
+* {
+    scrollbar-width: thin; /* Make the scrollbar thin */
+    scrollbar-color: #ccc transparent; /* Color of the thumb and track */
+}
+
+/* For hover effect in Firefox */
+*::-webkit-scrollbar-thumb:hover {
+    background: #aaa; /* Darker color on hover */
+}
+
+
 /* Responsive Design */
 @media (max-width: 768px) {
     .name-title {
