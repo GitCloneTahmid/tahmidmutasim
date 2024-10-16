@@ -10,7 +10,7 @@ body {
     background-color: white;
     color: #333;
     line-height: 1.6; 
-    padding: 20px;
+    padding: 0 20px; /* Reduced vertical padding */
 }
 
 /* Header Section (Centered) */
@@ -36,12 +36,10 @@ header {
     margin-bottom: 30px;
 }
 
-
 /* About Section (Left-aligned) */
 .about-section {
     margin: 40px 0; /* Keep vertical spacing */
     text-align: left; /* Keep text aligned to the left */
-    max-width: 800px; /* Limit the max width for better readability */
     width: 100%; /* Allow the section to fill the container */
 }
 
@@ -57,12 +55,8 @@ header {
     word-wrap: break-word; /* Ensure long words wrap to the next line */
     overflow-wrap: break-word; /* Prevent long words from causing overflow */
     margin: 0; /* Remove default margin to avoid extra whitespace */
-    padding: 0 20px; /* Add padding to prevent text from touching the edges */
+    /* Removed padding to let it fill the space */
 }
-
-
-
-
 
 /* Journal Section (Left-aligned) */
 .journal-section {
@@ -79,7 +73,7 @@ header {
     text-align: left;
 }
 
-.journal-section a{
+.journal-section a {
     color: #024CAA;
     text-decoration: underline;
 }
@@ -113,7 +107,6 @@ footer {
     font-size: 0.9rem;
     color: #16423C;
 }
-
 
 /* DARK MODE TOGGLE BUTTON */
 
@@ -155,7 +148,6 @@ body.dark-mode .dark-mode-toggle label:hover {
     background-color: #333; /* Darker hover effect in dark mode */
 }
 
-
 /* Dark Mode Styles */
 body.dark-mode {
     background-color: #121212; /* Dark background */
@@ -184,11 +176,6 @@ body.dark-mode footer {
     color: #b0b0b0; /* Soft grey for footer text */
 }
 
-
-/* Other styles remain unchanged */
-
-
-
 /* Responsive Design */
 @media (max-width: 768px) {
     .name-title {
@@ -198,7 +185,6 @@ body.dark-mode footer {
     .small-bio {
         font-size: 1rem;
     }
-
 
     .about-section p,
     .journal-section p {
