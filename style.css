@@ -189,7 +189,7 @@ body.dark-mode footer {
 
 ::-webkit-scrollbar-thumb {
     background: #ccc; /* Color of the scrollbar thumb */
-    border-radius: 4px; /* Round edges for the thumb */
+    border-radius: 3px; /* Round edges for the thumb */
 }
 
 ::-webkit-scrollbar-thumb:hover {
