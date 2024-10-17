@@ -58,6 +58,18 @@
             body.classList.remove('dark-mode');
         }
     });
+
+    
 </script>
+
+<script>
+    fetch('blogs.html')  // Make sure the path is correct
+        .then(response => response.text())
+        .then(data => {
+            document.getElementById('blog-posts').innerHTML = data;
+        })
+        .catch(error => console.error('Error loading blog posts:', error));
+</script>
+
 </body>
 </html>
