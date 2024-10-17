@@ -37,9 +37,7 @@
 <section class="journal-section">
     <h2>Writings</h2>
     <p>My thoughts and stories, shared simply.</p>
-    <div id="blog-posts">
-        <!-- Blog posts will be dynamically inserted here -->
-    </div>
+    <p><strong><a href="https://theprose.com/post/832997/the-art-of-being-confused" target="blank">14.10.2024</a></strong></p>
 </section>
 
     <footer>
@@ -60,15 +58,6 @@
     });
 
     
-</script>
-
-<script>
-    fetch('blogs.html')  // Make sure the path is correct
-        .then(response => response.text())
-        .then(data => {
-            document.getElementById('blog-posts').innerHTML = data;
-        })
-        .catch(error => console.error('Error loading blog posts:', error));
 </script>
 
 </body>
