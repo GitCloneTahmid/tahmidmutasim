@@ -6,15 +6,16 @@
 }
 
 body {
-    font-family: 'Inter', sans-serif;
-    background-color: #FEFAE0;
-    color: black;
+    font-family: 'Inter', sans-serif; /* Using Inter font */
+    background-color: #FEF9F2; /* Updated background color */
+    color: black; /* Setting default text color to pure black */
     line-height: 1.6; 
     padding: 0 20px; /* Reduced vertical padding */
 }
 
-h1, h2, p, a {
-    font-family: 'Inter', sans-serif;
+h1, h2, h3, h4, p, .small-bio, a {
+    color: black; /* Ensuring all text is pure black */
+    font-family: 'Inter', sans-serif; /* Ensuring all text uses Inter font */
 }
 
 /* Header Section (Centered) */
@@ -26,12 +27,10 @@ header {
 .name-title {
     font-size: 2.5rem;
     margin-bottom: 10px;
-    color: #333;
 }
 
 .small-bio {
     font-size: 1.2rem;
-    color: #333;
 }
 
 /* Social Section (Centered) */
@@ -49,17 +48,14 @@ header {
 
 .about-section h2 {
     margin-bottom: 10px;
-    color: #333;
 }
 
 .about-section p {
     font-size: 1.1rem;
-    color: #444;
     line-height: 1.6; /* Adjust line height for better readability */
     word-wrap: break-word; /* Ensure long words wrap to the next line */
     overflow-wrap: break-word; /* Prevent long words from causing overflow */
     margin: 0; /* Remove default margin to avoid extra whitespace */
-    /* Removed padding to let it fill the space */
 }
 
 /* Journal Section (Left-aligned) */
@@ -74,17 +70,15 @@ header {
 
 .journal-section p {
     font-size: 1.1rem;
-    text-align: left;
 }
 
 .journal-section a {
-    color: #024CAA;
+    color: #024CAA; /* Lighter blue for default links */
     text-decoration: underline;
 }
 
 /* Link styles */
 a {
-    color: #024CAA; /* Lighter blue for default links */
     text-decoration: none;
     transition: color 0.3s ease; /* Smooth transition on hover */
 }
@@ -109,7 +103,6 @@ footer {
     text-align: center;
     margin-top: 40px;
     font-size: 0.9rem;
-    color: #16423C;
 }
 
 /* DARK MODE TOGGLE BUTTON */
@@ -130,7 +123,7 @@ footer {
 .dark-mode-toggle label {
     cursor: pointer;
     font-size: 1rem; /* Smaller font size */
-    color: #333; /* Default color for light mode */
+    color: black; /* Default color for light mode */
     background-color: transparent; /* Transparent background */
     border: 1px solid #ccc; /* Light border for visibility */
     border-radius: 3px; /* Rounded corners */
@@ -160,12 +153,10 @@ body.dark-mode {
 
 body.dark-mode h1, 
 body.dark-mode h2, 
-body.dark-mode h3 {
-    color: #ffffff; /* Bright white for headings */
-}
-
-body.dark-mode p {
-    color: #e0e0e0; /* Light grey for body text */
+body.dark-mode h3, 
+body.dark-mode p, 
+body.dark-mode .small-bio {
+    color: #ffffff; /* Bright white for headings and text in dark mode */
 }
 
 body.dark-mode a {
@@ -175,11 +166,6 @@ body.dark-mode a {
 body.dark-mode a:hover {
     color: #3700b3; /* Darker shade on hover for better visibility */
 }
-
-body.dark-mode footer {
-    color: #b0b0b0; /* Soft grey for footer text */
-}
-
 
 /* For WebKit Browsers (Chrome, Safari) */
 ::-webkit-scrollbar {
@@ -195,7 +181,6 @@ body.dark-mode footer {
 body {
     -ms-overflow-style: none; /* Hides scrollbar in IE and older Edge */
 }
-
 
 /* Responsive Design */
 @media (max-width: 768px) {
