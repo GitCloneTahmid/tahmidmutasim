@@ -10,13 +10,14 @@ body {
     background-color: #FEF9F2; /* Updated background color */
     color: black; /* Setting default text color to pure black */
     line-height: 1.6; 
-    padding: 0 20px; /* Reduced vertical padding */
 }
 
+/* Ensuring all text uses Inter font */
 h1, h2, h3, h4, p, .small-bio, a {
-    color: black; /* Ensuring all text is pure black */
     font-family: 'Inter', sans-serif; /* Ensuring all text uses Inter font */
+    color: black; /* Ensuring all text is pure black */
 }
+
 
 /* Header Section (Centered) */
 header {
@@ -79,24 +80,12 @@ header {
 
 /* Link styles */
 a {
+    color: #024CAA;
     text-decoration: none;
     transition: color 0.3s ease; /* Smooth transition on hover */
 }
 
-/* Hover effect */
-a:hover {
-    color: #024CAA; 
-}
 
-/* Visited link style */
-a:visited {
-    color: #024CAA; 
-}
-
-/* Active link style (when clicked) */
-a:active {
-    color: #024CAA;
-}
 
 /* Footer (Centered) */
 footer {
