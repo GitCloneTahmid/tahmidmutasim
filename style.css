@@ -8,7 +8,7 @@
 body {
     font-family: "Agdasima", sans-serif; /* Using Inter font */
     background-color: #FEF9F2; /* Updated background color */
-    font-size: 395;
+    font-size: 18px;
     color: black; /* Setting default text color to pure black */
     line-height: 1.6; 
 }
@@ -16,7 +16,7 @@ body {
 /* Ensuring all text uses Inter font */
 h1, h2, h3, h4, p, .small-bio, a {
     font-family: "Agdasima", sans-serif; /* Ensuring all text uses Inter font */
-    font-size: 395;
+    font-size: 18px;
     color: black; /* Ensuring all text is pure black */
 }
 
