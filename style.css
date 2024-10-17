@@ -6,7 +6,7 @@
 }
 
 body {
-    font-family: 'Inter', sans-serif; /* Using Inter font */
+    font-family: "Agdasima", sans-serif; /* Using Inter font */
     background-color: #FEF9F2; /* Updated background color */
     color: black; /* Setting default text color to pure black */
     line-height: 1.6; 
@@ -14,7 +14,7 @@ body {
 
 /* Ensuring all text uses Inter font */
 h1, h2, h3, h4, p, .small-bio, a {
-    font-family: 'Inter', sans-serif; /* Ensuring all text uses Inter font */
+    font-family: "Agdasima", sans-serif; /* Ensuring all text uses Inter font */
     color: black; /* Ensuring all text is pure black */
 }
 
