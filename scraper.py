@@ -2,7 +2,7 @@ import requests
 from bs4 import BeautifulSoup
 
 def scrape_prose_blogs(username):
-    url = f'https://theprose.com/{username}'  # URL to your profile
+    url = f'https://www.theprose.com/Tahmidwrites'  # URL to your profile
     response = requests.get(url)
 
     # Check if the request was successful
@@ -26,7 +26,7 @@ def scrape_prose_blogs(username):
     return blog_links
 
 if __name__ == "__main__":
-    username = "your_username"  # Replace with your TheProse username
+    username = "Tahmidwrites"  # Replace with your TheProse username
     blogs = scrape_prose_blogs(username)
 
     # Print or format the blog links for your website
@@ -40,7 +40,7 @@ def save_blogs_to_html(blogs, filename='blogs.html'):
         f.write("</ul>")
 
 if __name__ == "__main__":
-    username = "your_username"  # Replace with your TheProse username
+    username = "Tahmidwrites"  # Replace with your TheProse username
     blogs = scrape_prose_blogs(username)
     save_blogs_to_html(blogs)
 
