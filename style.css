@@ -1,145 +1,106 @@
 /* General Styles */
 * {
-    margin: 16;
+    margin: 0;
     padding: 0;
     box-sizing: border-box;
 }
 
 body {
-    font-family: "Agdasima", sans-serif; /* Using Inter font */
-    background-color: #FEF9F2; /* Updated background color */
-    font-size: 28px;
-    color: black; /* Setting default text color to pure black */
-    line-height: 1.6; 
+    font-family: "Agdasima", sans-serif; /* Using your selected font */
+    background-color: #FEF9F2; /* Light background color */
+    color: black; /* Default text color */
+    line-height: 1.8; /* Better readability */
+    font-size: 18px; /* Global font size */
+    padding: 20px; /* Add padding for spacing */
 }
 
-/* Ensuring all text uses Inter font */
-h1, h2, h3, h4, p, .small-bio, a {
-    font-family: "Agdasima", sans-serif; /* Ensuring all text uses Inter font */
-    font-size: 18px;
-    color: black; /* Ensuring all text is pure black */
-}
-
-
-/* Header Section (Centered) */
+/* Header Section */
 header {
     text-align: center;
-    margin-bottom: 20px;
+    margin-bottom: 40px;
 }
 
 .name-title {
-    font-size: 2.5rem;
+    font-size: 3rem; /* Large, bold title for your name */
+    font-weight: bold; /* Bold for emphasis */
+    color: black;
     margin-bottom: 10px;
 }
 
 .small-bio {
-    font-size: 1.4rem;
+    font-size: 1.6rem; /* Subheading bio text size */
+    font-weight: bold;
+    color: black;
 }
 
-/* Social Section (Centered) */
+/* Social Section */
 .social-section {
     text-align: center;
     margin-bottom: 30px;
 }
 
-/* About Section (Left-aligned) */
-.about-section {
-    margin: 40px 0; /* Keep vertical spacing */
-    text-align: left; /* Keep text aligned to the left */
-    width: 100%; /* Allow the section to fill the container */
-}
-
-.about-section h2 {
+.social-section h3 {
+    font-size: 1.8rem; /* Bold and clear for contact section */
+    font-weight: bold;
     margin-bottom: 10px;
 }
 
-.about-section p {
-    font-size: 1.4rem;
-    line-height: 1.6; /* Adjust line height for better readability */
-    word-wrap: break-word; /* Ensure long words wrap to the next line */
-    overflow-wrap: break-word; /* Prevent long words from causing overflow */
-    margin: 0; /* Remove default margin to avoid extra whitespace */
+/* About Section */
+.about-section {
+    margin: 40px 0;
+    text-align: left;
+    width: 100%;
 }
 
-/* Journal Section (Left-aligned) */
+.about-section h2 {
+    font-size: 2rem; /* Bold heading for About section */
+    font-weight: bold;
+    margin-bottom: 20px;
+}
+
+.about-section p {
+    font-size: 1.2rem; /* Larger font for readability */
+    line-height: 1.8;
+    color: black;
+    margin-bottom: 20px;
+}
+
+/* Journal Section */
 .journal-section {
     text-align: left;
     margin: 40px 0;
 }
 
 .journal-section h2 {
+    font-size: 2rem; /* Bold heading for Writings section */
+    font-weight: bold;
     margin-bottom: 10px;
 }
 
 .journal-section p {
-    font-size: 1.1rem;
+    font-size: 1.2rem;
+    margin-bottom: 10px;
 }
 
 .journal-section a {
-    color: #024CAA; /* Lighter blue for default links */
+    color: #024CAA; /* Link color */
+    font-weight: bold;
     text-decoration: underline;
+    font-size: 1.2rem; /* Larger link text */
 }
 
-/* Link styles */
-a {
-    color: #024CAA;
-    text-decoration: none;
-    transition: color 0.3s ease; /* Smooth transition on hover */
-}
-
-
-
-/* Footer (Centered) */
+/* Footer */
 footer {
     text-align: center;
     margin-top: 40px;
-    font-size: 0.9rem;
-}
-
-/* DARK MODE TOGGLE BUTTON */
-
-/* Dark Mode Toggle */
-.dark-mode-toggle {
-    position: absolute;
-    top: 20px;
-    right: 20px;
-    display: flex;
-    align-items: center;
-}
-
-.dark-mode-toggle input {
-    display: none; /* Hide the checkbox */
-}
-
-.dark-mode-toggle label {
-    cursor: pointer;
-    font-size: 1rem; /* Smaller font size */
-    color: black; /* Default color for light mode */
-    background-color: transparent; /* Transparent background */
-    border: 1px solid #ccc; /* Light border for visibility */
-    border-radius: 3px; /* Rounded corners */
-    padding: 5px 8px; /* Smaller padding for a compact look */
-    transition: background-color 0.3s, color 0.3s; /* Smooth transitions */
-}
-
-.dark-mode-toggle label:hover {
-    background-color: #f0f0f0; /* Light hover effect for visibility */
-}
-
-/* Dark Mode Styles for Toggle */
-body.dark-mode .dark-mode-toggle label {
-    color: #e0e0e0; /* Light text for dark mode */
-    border: 1px solid #444; /* Darker border for dark mode */
-}
-
-body.dark-mode .dark-mode-toggle label:hover {
-    background-color: #333; /* Darker hover effect in dark mode */
+    font-size: 1rem;
+    color: black;
 }
 
 /* Dark Mode Styles */
 body.dark-mode {
-    background-color: #121212; /* Dark background */
-    color: #e0e0e0; /* Light text */
+    background-color: #121212;
+    color: #e0e0e0;
 }
 
 body.dark-mode h1, 
@@ -147,44 +108,29 @@ body.dark-mode h2,
 body.dark-mode h3, 
 body.dark-mode p, 
 body.dark-mode .small-bio {
-    color: #ffffff; /* Bright white for headings and text in dark mode */
+    color: #ffffff; /* Bright white for text in dark mode */
 }
 
 body.dark-mode a {
-    color: #bb86fc; /* Light purple for links */
+    color: #bb86fc;
 }
 
 body.dark-mode a:hover {
-    color: #3700b3; /* Darker shade on hover for better visibility */
-}
-
-/* For WebKit Browsers (Chrome, Safari) */
-::-webkit-scrollbar {
-    display: none; /* Hides the scrollbar */
-}
-
-/* For Firefox */
-* {
-    scrollbar-width: none; /* Hides the scrollbar */
-}
-
-/* For Internet Explorer/Edge */
-body {
-    -ms-overflow-style: none; /* Hides scrollbar in IE and older Edge */
+    color: #3700b3;
 }
 
 /* Responsive Design */
 @media (max-width: 768px) {
     .name-title {
-        font-size: 2rem;
+        font-size: 2.5rem;
     }
 
     .small-bio {
-        font-size: 1rem;
+        font-size: 1.4rem;
     }
 
     .about-section p,
     .journal-section p {
-        font-size: 1rem;
+        font-size: 1.1rem;
     }
 }
