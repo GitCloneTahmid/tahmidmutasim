@@ -16,7 +16,7 @@ body {
 /* Ensuring all text uses Inter font */
 h1, h2, h3, h4, p, .small-bio, a {
     font-family: "Agdasima", sans-serif; /* Ensuring all text uses Inter font */
-    font-weight: 400;
+    font-size: 195;
     color: black; /* Ensuring all text is pure black */
 }
 
