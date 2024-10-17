@@ -33,6 +33,12 @@ header {
     color: black;
 }
 
+a {
+    color: #024CAA; /* Link color */
+    font-weight: bold;
+    text-decoration: none;
+    
+}
 /* Social Section */
 .social-section {
     text-align: center;
