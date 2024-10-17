@@ -6,11 +6,15 @@
 }
 
 body {
-    font-family: 'Roboto', sans-serif;
-    background-color: white;
-    color: #333;
+    font-family: 'Inter', sans-serif;
+    background-color: #FEFAE0;
+    color: black;
     line-height: 1.6; 
     padding: 0 20px; /* Reduced vertical padding */
+}
+
+h1, h2, p, a {
+    font-family: 'Inter', sans-serif;
 }
 
 /* Header Section (Centered) */
