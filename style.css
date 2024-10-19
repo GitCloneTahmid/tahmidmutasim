@@ -6,12 +6,31 @@
 }
 
 body {
-    font-family: "Agdasima", sans-serif; /* Using your selected font */
-    background-color: #FEF9F2; /* Light background color */
-    color: black; /* Default text color */
-    line-height: 1.8; /* Better readability */
-    font-size: 18px; /* Global font size */
-    padding: 20px; /* Add padding for spacing */
+    font-family: "Agdasima", sans-serif;
+    background-color: #FEF9F2;
+    color: black;
+    line-height: 1.8;
+    font-size: 18px;
+    padding: 20px;
+}
+
+/* Top Links Section */
+.top-links {
+    display: flex;
+    justify-content: center;
+    gap: 15px;
+    margin-bottom: 20px;
+}
+
+.top-link {
+    font-size: 1rem;
+    color: #024CAA;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+.top-link:hover {
+    text-decoration: underline;
 }
 
 /* Header Section */
@@ -21,21 +40,15 @@ header {
 }
 
 .name-title {
-    font-size: 3rem; /* Large, bold title for your name */
-    font-weight: bold; /* Bold for emphasis */
+    font-size: 3rem;
+    font-weight: bold;
     color: black;
     margin-bottom: 10px;
 }
 
 .small-bio {
-    font-size: 1.5rem; /* Subheading bio text size */
+    font-size: 1.5rem;
     color: black;
-}
-
-a {
-    color: #024CAA; /* Link color */
-    font-weight: bold;
-    text-decoration: none;
 }
 
 /* Social Section */
@@ -45,7 +58,7 @@ a {
 }
 
 .social-section h3 {
-    font-size: 1.8rem; /* Bold and clear for contact section */
+    font-size: 1.8rem;
     font-weight: bold;
     margin-bottom: 10px;
 }
@@ -58,56 +71,16 @@ a {
 }
 
 .about-section h2 {
-    font-size: 2rem; /* Bold heading for About section */
+    font-size: 2rem;
     font-weight: bold;
     margin-bottom: 20px;
 }
 
 .about-section p {
-    font-size: 1.4rem; /* Larger font for readability */
+    font-size: 1.4rem;
     line-height: 1.8;
     color: black;
     margin-bottom: 20px;
-}
-
-/* Journal Section (Writings) */
-.journal-section {
-    text-align: center;
-    margin: 40px 0;
-}
-
-.journal-section h2 {
-    font-size: 2rem; /* Bold heading for Writings section */
-    font-weight: bold;
-    margin-bottom: 10px;
-}
-
-.journal-section p {
-    font-size: 1.3rem; /* Slightly increased paragraph size */
-}
-
-.journal-section a {
-    color: #024CAA; /* Link color */
-    font-weight: bold;
-    text-decoration: underline;
-    font-size: 1.2rem; /* Larger link text */
-}
-
-/* Finished Books Section */
-.finished-books {
-    text-align: center;
-    margin-bottom: 20px;
-}
-
-.finished-books h2 {
-    font-size: 2rem;
-    font-weight: bold;
-    margin-bottom: 10px;
-}
-
-.finished-books p a {
-    color: #024CAA;
-    text-decoration: underline;
 }
 
 /* Footer */
@@ -128,8 +101,7 @@ footer {
         font-size: 1.4rem;
     }
 
-    .about-section p,
-    .journal-section p {
+    .about-section p {
         font-size: 1.1rem;
     }
 }
