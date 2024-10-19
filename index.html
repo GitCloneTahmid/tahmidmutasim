@@ -9,28 +9,36 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Agdasima:wght@400;700&display=swap" rel="stylesheet">
-
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
+
+    <!-- Finished Books Section -->
+    <section class="finished-books">
+        <h2>Finished Books</h2>
+        <p><a href="book1.html">Book 1</a> | <a href="book2.html">Book 2</a></p>
+    </section>
+
+    <!-- Writings Section -->
+    <section class="journal-section">
+        <h2>Writings</h2>
+        <p>My thoughts and stories, shared simply.</p>
+        <p><strong><a href="https://theprose.com/post/832997/the-art-of-being-confused" target="blank">14.10.2024</a></strong></p>
+    </section>
+
     <header>
         <h1 class="name-title">Tahmid Mutasim</h1>
         <p class="small-bio"><small>Confused | Overwhelmed | Lost</small></p>
-        <div class="dark-mode-toggle">
-        <input type="checkbox" id="toggleDarkMode">
-        <label for="toggleDarkMode">🌗</label>
-    </div>
     </header>
 
-  <section class="social-section">
-    <h3>Contacts</h3>
-    <div class="social-links">
-        <a href="https://www.instagram.com/tahmid_mutasim/" target="_blank">Instagram | </a> 
-        <a href="mailto:tahmidmutasim2@gmail.com">Mail Me</a>
-    </div>
-  </section>
+    <section class="social-section">
+        <h3>Contacts</h3>
+        <div class="social-links">
+            <a href="https://www.instagram.com/tahmid_mutasim/" target="_blank">Instagram | </a>
+            <a href="mailto:tahmidmutasim2@gmail.com">Mail Me</a>
+        </div>
+    </section>
    
-
     <section class="about-section">
         <h2>About Me</h2>
         <p>Hi, I'm <strong>Tahmid Mutasim</strong>, a student currently navigating the wild rollercoaster of life.
@@ -41,32 +49,9 @@
         <p><small><strong>[13.10.2024]</strong></small></p>
     </section>
 
-<section class="journal-section">
-    <h2>Writings</h2>
-    <p>My thoughts and stories, shared simply.</p>
-    <p><strong><a href="https://theprose.com/post/832997/the-art-of-being-confused" target="blank">14.10.2024</a></strong></p>
-    
-</section>
-
     <footer>
         <p><small>&copy; 2024 Tahmid Mutasim.</small></p>
     </footer>
-
-
-    <script>
-    const toggle = document.getElementById('toggleDarkMode');
-    const body = document.body;
-
-    toggle.addEventListener('change', function() {
-        if (this.checked) {
-            body.classList.add('dark-mode');
-        } else {
-            body.classList.remove('dark-mode');
-        }
-    });
-
-    
-</script>
 
 </body>
 </html>
