@@ -14,6 +14,18 @@ body {
     padding: 20px;
 }
 
+a {
+    font-family: "Agdasima", sans-serif;
+    font-size: 1rem;
+    color: #024CAA;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+a:hover{
+    text-decoration: hover;
+}
+
 /* Top Links Section */
 .top-links {
     display: flex;
@@ -23,6 +35,7 @@ body {
 }
 
 .top-link {
+    font-family: "Agdasima", sans-serif;
     font-size: 1rem;
     color: #024CAA;
     text-decoration: none;
