@@ -104,12 +104,14 @@ footer {
     color: black;
 }
 
-.writings-section p {
-    font-size: 1.5rem; /* Make it larger */
-    line-height: 1.8; /* Increase line height for better readability */
+.writings-section {
+    
+    font-size: 1.2rem; /* Increase size for blog links */
+    font-weight: bold; /* Optional: make it bold */
 }
 
-}
+
+
 
 .finished-books .book-row {
     display: flex; /* Use flexbox for layout */
