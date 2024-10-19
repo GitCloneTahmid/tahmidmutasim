@@ -104,8 +104,6 @@ footer {
     color: black;
 }
 
-/*books-row */
-
 .finished-books .book-row {
     display: flex; /* Use flexbox for layout */
     justify-content: space-around; /* Space books evenly */
@@ -115,6 +113,7 @@ footer {
 .book {
     text-align: center; /* Center the text below each book */
     margin: 0 10px; /* Margin between books */
+    flex: 1; /* Make the book take equal space */
 }
 
 .book img {
