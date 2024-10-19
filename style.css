@@ -104,6 +104,31 @@ footer {
     color: black;
 }
 
+/*books-row */
+
+.finished-books .book-row {
+    display: flex; /* Use flexbox for layout */
+    justify-content: space-around; /* Space books evenly */
+    margin-top: 20px; /* Space above the book row */
+}
+
+.book {
+    text-align: center; /* Center the text below each book */
+    margin: 0 10px; /* Margin between books */
+}
+
+.book img {
+    width: 150px; /* Set a fixed width for the book cover images */
+    height: auto; /* Maintain aspect ratio */
+    border-radius: 5px; /* Rounded corners for book covers */
+}
+
+.book p {
+    font-size: 1rem; /* Font size for book titles */
+    margin-top: 5px; /* Space above the title */
+}
+
+
 /* Responsive Design */
 @media (max-width: 768px) {
     .name-title {
