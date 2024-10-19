@@ -130,13 +130,9 @@ footer {
 }
 
 .book p {
-    font-size: 1rem; /* Set a standard font size */
-    font-weight: bold; /* Make titles bold */
+    font-size: 1rem; /* Font size for book titles */
     margin-top: 5px; /* Space above the title */
-    color: black; /* Uniform color for all titles */
-    text-align: center; /* Center text for all titles */
 }
-
 
 /* Responsive Design */
 @media (max-width: 768px) {
