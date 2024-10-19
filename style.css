@@ -104,7 +104,7 @@ footer {
     color: black;
 }
 
-.writings-section{
+.writings-section p {
     font-size: 1.5rem; /* Make it larger */
     line-height: 1.8; /* Increase line height for better readability */
 }
