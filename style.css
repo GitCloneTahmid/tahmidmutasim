@@ -22,8 +22,8 @@ a {
     font-weight: bold;
 }
 
-social-links:hover{
-    text-decoration: hover;
+a:hover{
+    text-decoration: underline;
 }
 
 /* Top Links Section */
