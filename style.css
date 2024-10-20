@@ -111,30 +111,30 @@ footer {
 }
 
 
-
-
 .finished-books .book-row {
-    display: flex; /* Use flexbox for layout */
-    justify-content: space-around; /* Space books evenly */
-    margin-top: 20px; /* Space above the book row */
+    display: flex;
+    flex-wrap: wrap; /* Allow items to wrap to the next row */
+    justify-content: space-around;
+    margin-top: 20px;
 }
 
 .book {
-    text-align: center; /* Center the text below each book */
-    margin: 0 10px; /* Margin between books */
-    flex: 1; /* Make the book take equal space */
+    text-align: center;
+    margin: 0 10px;
+    flex-basis: calc(50% - 20px); /* Ensure only 2 books fit per row */
 }
 
 .book img {
-    width: 150px; /* Set a fixed width for the book cover images */
-    height: auto; /* Maintain aspect ratio */
-    border-radius: 5px; /* Rounded corners for book covers */
+    width: 150px;
+    height: auto;
+    border-radius: 5px;
 }
 
 .book p {
-    font-size: 1rem; /* Font size for book titles */
-    margin-top: 5px; /* Space above the title */
+    font-size: 1rem;
+    margin-top: 5px;
 }
+
 
 /* Responsive Design */
 @media (max-width: 768px) {
