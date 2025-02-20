@@ -7,12 +7,12 @@
 
 body {
     font-family: 'IBM Plex Mono', monospace; /* Typewriter vibe */
-    background-color: #f8f1e9; /* Soft off-white */
+    background-color: #f8f1e9; /* Cream background */
     color: #2f2f2f; /* Dark gray */
     line-height: 1.6;
     font-size: 16px;
     padding: 20px;
-    max-width: 700px; /* Slightly narrower for focus */
+    max-width: 700px;
     margin: 0 auto;
 }
 
@@ -20,7 +20,7 @@ body {
 header {
     text-align: center;
     padding-bottom: 20px;
-    border-bottom: 1px solid #d3c9b7; /* Subtle sepia line */
+    border-bottom: 1px solid #d3c9b7;
 }
 
 h1 {
@@ -38,11 +38,12 @@ nav a {
     color: #4a2c2a; /* Rich brown */
     text-decoration: none;
     padding: 0 10px;
+    font-weight: 600;
 }
 
 nav a:hover {
-    text-decoration: underline;
     color: #1a3c34;
+    text-decoration: underline;
 }
 
 /* Main Content */
@@ -60,7 +61,7 @@ h2 {
     font-weight: 600;
     color: #1a3c34;
     margin-bottom: 10px;
-    border-bottom: 1px dashed #d3c9b7; /* Dashed for subtle flair */
+    border-bottom: 1px dashed #d3c9b7;
     padding-bottom: 5px;
 }
 
@@ -78,20 +79,26 @@ ul {
 }
 
 ul li {
-    margin: 10px 0;
+    margin: 12px 0;
 }
 
+/* Standout Links in Writings */
 .writings ul li a {
-    color: #4a2c2a;
-    text-decoration: none;
-    font-weight: 500;
+    font-size: 1.25rem; /* Larger for emphasis */
+    font-weight: 700; /* Bold */
+    color: #4a2c2a; /* Rich brown */
+    text-decoration: underline; /* Always underlined to stand out */
+    transition: color 0.3s ease;
 }
 
 .writings ul li a:hover {
-    text-decoration: underline;
-    color: #1a3c34;
+    color: #1a3c34; /* Teal on hover */
+    background: #e6dcd2; /* Subtle cream highlight */
+    padding: 2px 6px;
+    border-radius: 4px;
 }
 
+/* Books List */
 .books ul li {
     color: #5c4033;
 }
@@ -102,7 +109,7 @@ footer {
     padding-top: 20px;
     border-top: 1px solid #d3c9b7;
     font-size: 0.9rem;
-    color: #7a6a5d; /* Muted gray-brown */
+    color: #7a6a5d;
 }
 
 /* Responsive Design */
@@ -117,6 +124,10 @@ footer {
 
     p {
         font-size: 1rem;
+    }
+
+    .writings ul li a {
+        font-size: 1.1rem;
     }
 
     nav {
