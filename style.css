@@ -6,13 +6,13 @@
 }
 
 body {
-    font-family: 'IBM Plex Mono', monospace; /* Typewriter-inspired font */
+    font-family: 'IBM Plex Mono', monospace; /* Typewriter vibe */
     background-color: #f8f1e9; /* Soft off-white */
-    color: #2f2f2f; /* Dark gray for readability */
+    color: #2f2f2f; /* Dark gray */
     line-height: 1.6;
     font-size: 16px;
     padding: 20px;
-    max-width: 800px;
+    max-width: 700px; /* Slightly narrower for focus */
     margin: 0 auto;
 }
 
@@ -26,24 +26,23 @@ header {
 h1 {
     font-size: 2.5rem;
     font-weight: 700;
-    color: #1a3c34; /* Deep teal for sophistication */
+    color: #1a3c34; /* Deep teal */
     margin-bottom: 10px;
 }
 
-/* Navigation */
 nav {
     font-size: 1rem;
 }
 
 nav a {
-    color: #4a2c2a; /* Rich brown for links */
+    color: #4a2c2a; /* Rich brown */
     text-decoration: none;
     padding: 0 10px;
 }
 
 nav a:hover {
     text-decoration: underline;
-    color: #1a3c34; /* Hover matches h1 color */
+    color: #1a3c34;
 }
 
 /* Main Content */
@@ -52,32 +51,49 @@ main {
     text-align: center;
 }
 
-main p {
-    font-size: 1.1rem;
-    color: #5c4033; /* Warm brown for body text */
-    margin-bottom: 20px;
+section {
+    margin-bottom: 40px;
 }
 
-main ul {
+h2 {
+    font-size: 1.5rem;
+    font-weight: 600;
+    color: #1a3c34;
+    margin-bottom: 10px;
+    border-bottom: 1px dashed #d3c9b7; /* Dashed for subtle flair */
+    padding-bottom: 5px;
+}
+
+p {
+    font-size: 1.1rem;
+    color: #5c4033; /* Warm brown */
+    margin-bottom: 15px;
+}
+
+ul {
     list-style: none;
     text-align: left;
     max-width: 500px;
     margin: 0 auto;
 }
 
-main ul li {
+ul li {
     margin: 10px 0;
 }
 
-main ul li a {
+.writings ul li a {
     color: #4a2c2a;
     text-decoration: none;
     font-weight: 500;
 }
 
-main ul li a:hover {
+.writings ul li a:hover {
     text-decoration: underline;
     color: #1a3c34;
+}
+
+.books ul li {
+    color: #5c4033;
 }
 
 /* Footer */
@@ -95,15 +111,19 @@ footer {
         font-size: 2rem;
     }
 
+    h2 {
+        font-size: 1.3rem;
+    }
+
+    p {
+        font-size: 1rem;
+    }
+
     nav {
         font-size: 0.9rem;
     }
 
-    main p {
-        font-size: 1rem;
-    }
-
     body {
-        padding: 10px;
+        padding: 15px;
     }
 }
