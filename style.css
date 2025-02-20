@@ -1,4 +1,4 @@
-/* General Styles */
+/* Reset and Base Styles */
 * {
     margin: 0;
     padding: 0;
@@ -6,181 +6,104 @@
 }
 
 body {
-    font-family: "Poppins", sans-serif;
-    background: linear-gradient(135deg, #f5f7fa 0%, #c3cfe2 100%);
-    color: #333;
+    font-family: 'IBM Plex Mono', monospace; /* Typewriter-inspired font */
+    background-color: #f8f1e9; /* Soft off-white */
+    color: #2f2f2f; /* Dark gray for readability */
     line-height: 1.6;
     font-size: 16px;
-    min-height: 100vh;
-    padding: 0;
+    padding: 20px;
+    max-width: 800px;
+    margin: 0 auto;
 }
 
-/* Utility Classes */
-.highlight {
-    background: #e0f7fa;
-    padding: 2px 6px;
-    border-radius: 4px;
-    color: #00796b;
-}
-
-/* Header Section */
+/* Header */
 header {
-    background: rgba(255, 255, 255, 0.9);
-    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.05);
-    padding: 20px 0;
-    position: sticky;
-    top: 0;
-    z-index: 10;
+    text-align: center;
+    padding-bottom: 20px;
+    border-bottom: 1px solid #d3c9b7; /* Subtle sepia line */
+}
+
+h1 {
+    font-size: 2.5rem;
+    font-weight: 700;
+    color: #1a3c34; /* Deep teal for sophistication */
+    margin-bottom: 10px;
 }
 
 /* Navigation */
-.top-links {
-    display: flex;
-    justify-content: center;
-    gap: 30px;
-    padding: 10px 0;
-    flex-wrap: wrap;
-}
-
-.top-link {
+nav {
     font-size: 1rem;
-    color: #0288d1;
+}
+
+nav a {
+    color: #4a2c2a; /* Rich brown for links */
     text-decoration: none;
-    font-weight: 600;
-    padding: 8px 16px;
-    border-radius: 25px;
-    transition: all 0.3s ease;
+    padding: 0 10px;
 }
 
-.top-link:hover {
-    background: #0288d1;
-    color: white;
-    text-decoration: none;
-}
-
-/* Hero Section */
-.hero {
-    text-align: center;
-    padding: 40px 20px;
-    animation: fadeIn 1s ease-in;
-}
-
-.name-title {
-    font-size: 3.5rem;
-    font-weight: 700;
-    color: #0277bd;
-    margin-bottom: 10px;
-    letter-spacing: 1px;
-}
-
-.small-bio {
-    font-size: 1.2rem;
-    color: #555;
-    font-weight: 300;
-    letter-spacing: 0.5px;
+nav a:hover {
+    text-decoration: underline;
+    color: #1a3c34; /* Hover matches h1 color */
 }
 
 /* Main Content */
 main {
-    max-width: 800px;
-    margin: 0 auto;
-    padding: 40px 20px;
+    padding: 20px 0;
+    text-align: center;
 }
 
-/* About Section */
-.about-section {
-    margin: 0;
-}
-
-.card {
-    background: white;
-    border-radius: 15px;
-    padding: 30px;
-    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
-    transition: transform 0.3s ease, box-shadow 0.3s ease;
-}
-
-.card:hover {
-    transform: translateY(-5px);
-    box-shadow: 0 15px 40px rgba(0, 0, 0, 0.15);
-}
-
-.about-section h2 {
-    font-size: 2rem;
-    font-weight: 600;
-    color: #0288d1;
+main p {
+    font-size: 1.1rem;
+    color: #5c4033; /* Warm brown for body text */
     margin-bottom: 20px;
 }
 
-.about-section p {
-    font-size: 1.1rem;
-    color: #444;
-    margin-bottom: 15px;
+main ul {
+    list-style: none;
+    text-align: left;
+    max-width: 500px;
+    margin: 0 auto;
 }
 
-.date {
-    font-size: 0.9rem;
-    color: #777;
+main ul li {
+    margin: 10px 0;
+}
+
+main ul li a {
+    color: #4a2c2a;
+    text-decoration: none;
+    font-weight: 500;
+}
+
+main ul li a:hover {
+    text-decoration: underline;
+    color: #1a3c34;
 }
 
 /* Footer */
 footer {
     text-align: center;
-    padding: 20px;
-    background: rgba(255, 255, 255, 0.8);
+    padding-top: 20px;
+    border-top: 1px solid #d3c9b7;
     font-size: 0.9rem;
-    color: #666;
-    border-top: 1px solid #eee;
-}
-
-/* Animations */
-@keyframes fadeIn {
-    from { opacity: 0; transform: translateY(20px); }
-    to { opacity: 1; transform: translateY(0); }
-}
-
-.card, .top-link {
-    animation: fadeIn 0.5s ease-in;
+    color: #7a6a5d; /* Muted gray-brown */
 }
 
 /* Responsive Design */
-@media (max-width: 768px) {
-    .name-title {
-        font-size: 2.5rem;
-    }
-
-    .small-bio {
-        font-size: 1rem;
-    }
-
-    .top-links {
-        gap: 15px;
-    }
-
-    .top-link {
-        padding: 6px 12px;
-    }
-
-    .card {
-        padding: 20px;
-    }
-
-    .about-section h2 {
-        font-size: 1.8rem;
-    }
-
-    .about-section p {
-        font-size: 1rem;
-    }
-}
-
-@media (max-width: 480px) {
-    .name-title {
+@media (max-width: 600px) {
+    h1 {
         font-size: 2rem;
     }
 
-    .top-links {
-        flex-direction: column;
-        gap: 10px;
+    nav {
+        font-size: 0.9rem;
+    }
+
+    main p {
+        font-size: 1rem;
+    }
+
+    body {
+        padding: 10px;
     }
 }
