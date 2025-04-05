@@ -7,23 +7,23 @@
 }
 
 body {
-    background-color: #fafafa; /* Lighter background */
-    color: #444; /* Softer text color */
+    background-color: #f7f3e7; /* Light cream background */
+    color: #000; /* Black text */
     line-height: 1.8;
     font-size: 1rem;
 }
 
 /* Header */
 header {
-    background-color: #2E3A59; /* Darker, refined background */
-    color: #fff;
+    background-color: #f7f3e7; /* Same light cream as the body */
+    color: #000; /* Black text */
     padding: 40px 20px;
     text-align: center;
     box-shadow: 0 4px 10px rgba(0, 0, 0, 0.05);
 }
 
 header h1 {
-    font-size: 3rem; /* Bigger heading */
+    font-size: 3rem;
     font-weight: 600;
     margin-bottom: 10px;
     letter-spacing: 1px;
@@ -31,7 +31,7 @@ header h1 {
 
 .bio {
     font-size: 1.1rem;
-    color: #bbb;
+    color: #333; /* Slightly softer black */
     margin-bottom: 20px;
     line-height: 1.5;
 }
@@ -41,17 +41,18 @@ header .links {
 }
 
 header .link {
-    color: #fff;
+    color: #000; /* Black links */
     text-decoration: none;
     margin: 0 18px;
     font-size: 1.1rem;
-    opacity: 0.7;
-    transition: opacity 0.3s ease;
+    opacity: 0.8;
+    transition: opacity 0.3s ease, transform 0.3s ease;
 }
 
 header .link:hover {
     opacity: 1;
-    transform: scale(1.1);
+    transform: scale(1.1); /* Slight scaling on hover */
+    color: #007bff; /* Make links blue on hover */
 }
 
 /* Back Button */
@@ -60,7 +61,7 @@ header .back-btn {
     margin-top: 30px;
     font-size: 1rem;
     text-decoration: none;
-    color: #007bff;
+    color: #007bff; /* Blue color for back button */
     padding: 10px 15px;
     border-radius: 20px;
     transition: color 0.3s ease;
@@ -84,14 +85,14 @@ section {
 section h2 {
     font-size: 2.5rem;
     margin-bottom: 25px;
-    color: #333;
+    color: #000;
     font-weight: 700;
     letter-spacing: 0.5px;
 }
 
 section p {
     font-size: 1.1rem;
-    color: #666;
+    color: #333; /* Softer black for readability */
     line-height: 1.7;
     max-width: 800px;
     margin: 0 auto;
@@ -100,7 +101,7 @@ section p {
 /* Buttons */
 .btn {
     display: inline-block;
-    background-color: #007bff;
+    background-color: #000; /* Black button */
     color: white;
     padding: 12px 25px;
     text-decoration: none;
@@ -111,7 +112,7 @@ section p {
 }
 
 .btn:hover {
-    background-color: #0056b3;
+    background-color: #333; /* Darker black/gray on hover */
     transform: translateY(-3px);
 }
 
@@ -149,20 +150,20 @@ ul {
 ul li {
     font-size: 1.2rem;
     margin-bottom: 15px;
-    color: #555;
+    color: #333; /* Slightly lighter black */
     font-weight: 500;
     transition: color 0.3s ease;
 }
 
 ul li:hover {
-    color: #007bff;
+    color: #007bff; /* Blue on hover */
     cursor: pointer;
 }
 
 /* Footer */
 footer {
-    background-color: #2E3A59;
-    color: #fff;
+    background-color: #f7f3e7; /* Same light cream as the body */
+    color: #000;
     padding: 30px;
     text-align: center;
     font-size: 1rem;
@@ -173,6 +174,4 @@ footer {
 footer p {
     margin: 0;
     font-weight: 300;
-    letter-spacing: 0.5px;
-}
-
+    letter-spacing:
