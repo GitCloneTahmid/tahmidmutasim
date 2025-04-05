@@ -1,140 +1,106 @@
-/* Reset and Base Styles */
+/* styles.css - Combined and updated */
+:root {
+    --primary-color: #2D2D2D;
+    --accent-color: #0077B5;
+    --background-color: #FFFFFF;
+    --card-bg: #F5F5F5;
+    --text-color: #333333;
+    --muted-text: #666666;
+    --font-primary: 'Inter', sans-serif;
+}
+
 * {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
 }
 
+html {
+    scroll-behavior: smooth;
+}
+
 body {
-    font-family: 'IBM Plex Mono', monospace; /* Typewriter vibe */
-    background-color: #f8f1e9; /* Cream background */
-    color: #2f2f2f; /* Dark gray */
+    font-family: var(--font-primary);
     line-height: 1.6;
-    font-size: 16px;
-    padding: 20px;
-    max-width: 700px;
+    color: var(--text-color);
+    background-color: var(--background-color);
+    padding: 2rem;
+    max-width: 1200px;
     margin: 0 auto;
 }
 
-/* Header */
-header {
-    text-align: center;
-    padding-bottom: 20px;
-    border-bottom: 1px solid #d3c9b7;
-}
-
-h1 {
-    font-size: 2.5rem;
-    font-weight: 700;
-    color: #1a3c34; /* Deep teal */
-    margin-bottom: 10px;
-}
-
+/* Navigation */
 nav {
-    font-size: 1rem;
+    margin: 2rem 0;
+    padding: 1rem 0;
+    border-bottom: 1px solid #eee;
+    display: flex;
+    gap: 1.5rem;
+    flex-wrap: wrap;
 }
 
 nav a {
-    color: #4a2c2a; /* Rich brown */
+    color: var(--text-color);
     text-decoration: none;
-    padding: 0 10px;
-    font-weight: 600;
-}
-
-nav a:hover {
-    color: #1a3c34;
-    text-decoration: underline;
-}
-
-/* Main Content */
-main {
-    padding: 20px 0;
-    text-align: center;
-}
-
-section {
-    margin-bottom: 40px;
-}
-
-h2 {
-    font-size: 1.5rem;
-    font-weight: 600;
-    color: #1a3c34;
-    margin-bottom: 10px;
-    border-bottom: 1px dashed #d3c9b7;
-    padding-bottom: 5px;
-}
-
-p {
-    font-size: 1.1rem;
-    color: #5c4033; /* Warm brown */
-    margin-bottom: 15px;
-}
-
-ul {
-    list-style: none;
-    text-align: left;
-    max-width: 500px;
-    margin: 0 auto;
-}
-
-ul li {
-    margin: 12px 0;
-}
-
-/* Standout Links in Writings */
-.writings ul li a {
-    font-size: 1.25rem; /* Larger for emphasis */
-    font-weight: 700; /* Bold */
-    color: #4a2c2a; /* Rich brown */
-    text-decoration: underline; /* Always underlined to stand out */
+    font-weight: 500;
     transition: color 0.3s ease;
 }
 
-.writings ul li a:hover {
-    color: #1a3c34; /* Teal on hover */
-    background: #e6dcd2; /* Subtle cream highlight */
-    padding: 2px 6px;
-    border-radius: 4px;
+nav a:hover {
+    color: var(--accent-color);
 }
 
-/* Books List */
-.books ul li {
-    color: #5c4033;
+.active {
+    color: var(--accent-color);
+    font-weight: 600;
 }
 
-/* Footer */
-footer {
-    text-align: center;
-    padding-top: 20px;
-    border-top: 1px solid #d3c9b7;
-    font-size: 0.9rem;
-    color: #7a6a5d;
+/* Cards */
+.card {
+    background: var(--card-bg);
+    border-radius: 10px;
+    padding: 1.5rem;
+    margin: 1rem 0;
+    transition: transform 0.3s ease;
+    cursor: pointer;
+}
+
+.card:hover {
+    transform: translateY(-5px);
+}
+
+/* Section Links */
+.section-link {
+    display: block;
+    margin: 20px 0;
+    padding: 15px;
+    background: var(--card-bg);
+    border-radius: 8px;
+    transition: transform 0.3s ease;
+    text-decoration: none;
+    color: var(--text-color);
+}
+
+.section-link:hover {
+    transform: translateY(-5px);
+}
+
+/* Back Button */
+.back-button {
+    display: inline-block;
+    margin: 2rem 0;
+    color: var(--accent-color);
+    text-decoration: none;
+    font-weight: 500;
 }
 
 /* Responsive Design */
-@media (max-width: 600px) {
-    h1 {
-        font-size: 2rem;
-    }
-
-    h2 {
-        font-size: 1.3rem;
-    }
-
-    p {
-        font-size: 1rem;
-    }
-
-    .writings ul li a {
-        font-size: 1.1rem;
-    }
-
-    nav {
-        font-size: 0.9rem;
-    }
-
+@media (max-width: 768px) {
     body {
-        padding: 15px;
+        padding: 1rem;
+    }
+    
+    nav {
+        gap: 1rem;
     }
 }
